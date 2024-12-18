@@ -2,9 +2,9 @@ spring:
   cloud:
     gcp:
       credentials:
-          location: classpath:ls-it-project-3622729b0118.json
+        location: classpath:ls-it-project-3622729b0118.json
       storage:
-        bucket: "clothes-bucket"  
+        bucket: "clothes-bucket"
         auto-create-files: true
   security:
     oauth2:
@@ -13,9 +13,9 @@ spring:
           gitlab:
             client-id: 9b5c276c80ee9fdf7be2534cb60c7ab377518dbabc4b65596c3719ef86f5fe09
             client-secret: gloas-bad9b0f3a497f1f394f4d63f87e003141b540ccebb05f9f2144909c76b99e811
-            scope: openid+profile+email
+            scope: openid, profile, email
             authorization-grant-type: authorization_code
-            redirect-uri: http://localhost:8080/login/oauth2/code/gitlab
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
         provider:
           gitlab:
             issuer-uri: https://gitlab.com
