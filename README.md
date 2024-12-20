@@ -1,4 +1,4 @@
-# Project: Large Scale IT Project
+# Clothing Store: Large Scale IT Project
 
 ## Overview
 This project is a large-scale Java-based application that appears to implement a sales and order management system. It includes modules for managing clients, orders, products, sales, and warehouse operations. The project is structured using the Maven build system and incorporates various best practices, such as modularized components and configuration management.
