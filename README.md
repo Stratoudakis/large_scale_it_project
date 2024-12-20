@@ -87,4 +87,8 @@ Update the `application.yml` file located in the `src/main/resources` directory 
 ### Security
 The application includes a `Config` class to manage authentication and authorization settings.
 
+### CI/CD Pipeline
+
+This project uses Google Cloud Run as the CI/CD pipeline. The pipeline automates the build, test, and deployment processes, enabling seamless deployment of the application to the cloud environment. Integration with GCP ensures scalability and reliability for production deployments.
+
 
